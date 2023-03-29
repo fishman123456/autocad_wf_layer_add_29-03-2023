@@ -25,19 +25,20 @@
 
 
         </Grid.ColumnDefinitions>
-        <TextBlock x:Name="textbox_lay" TextWrapping="Wrap" Text="Имя слоя" Grid.ColumnSpan="4" FontSize="20" 
+        <TextBlock x:Name="textblock_lay" TextWrapping="Wrap" Text="Имя слоя" Grid.ColumnSpan="4" FontSize="20" 
                    TextAlignment="Center" FontWeight="Bold" UseLayoutRounding="True" Margin="5,5,5,5"/>
         <TextBox x:Name="textbox_leyer" Grid.ColumnSpan="4" TextWrapping="Wrap" Height="NaN" Width="NaN" Grid.Row="1" 
-                 Margin="5,5,5,5" FontSize="20" Grid.RowSpan="1" BorderThickness="3,3,3,3" MinWidth="150"/>
+                 Margin="5,5,5,5" FontSize="20" Grid.RowSpan="1" BorderThickness="3,3,3,3" MinWidth="150"
+                 Text="{Binding Name}"/>
         <CheckBox x:Name="checkbox_on_off" Content="Включен" Grid.Row="3" FontSize="20" Grid.RowSpan="1" 
-                  Grid.ColumnSpan="3" Margin="5,5,5,5"/>
+                  Grid.ColumnSpan="3" Margin="5,5,5,5" IsChecked="{Binding IsOn}"/>
         <CheckBox x:Name="check_box_frozen" Content="Заморожен" Grid.Row="2" FontSize="20" Grid.RowSpan="1" 
-                  Grid.ColumnSpan="3" Margin="5,5,5,5"/>
+                  Grid.ColumnSpan="3" Margin="5,5,5,5" IsChecked="{Binding IsFrozen}"/>
         <Button x:Name="button_cancel" Content="Отмена" Grid.Column="3" Grid.Row="4" Grid.ColumnSpan="1"
-                FontSize="20" Grid.RowSpan="1" Margin="5,5,5,5" HorizontalContentAlignment="Center" VerticalContentAlignment="Center">
+                FontSize="20" Grid.RowSpan="1" Margin="5,5,5,5" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Click="button_cancel_Click">
         </Button>
         <Button x:Name="button_ok" Content="Ок" Grid.Row="4" Grid.ColumnSpan="1" FontSize="20" 
-                Grid.RowSpan="1" Margin="5,5,5,5" HorizontalContentAlignment="Center" VerticalContentAlignment="Center"/>
+                Grid.RowSpan="1" Margin="5,5,5,5" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Click="button_ok_Click"/>
 
     </Grid>
 </Window>
