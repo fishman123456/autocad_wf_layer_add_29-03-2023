@@ -1,6 +1,6 @@
 ﻿using Autodesk.AutoCAD.Runtime;
 using Autodesk.AutoCAD.Windows;
-
+using AcadApp = Autodesk.AutoCAD.ApplicationServices;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -29,16 +29,22 @@ namespace autocad_wf_layer_add_29_03_2023
         {
             InitializeComponent();
             _data = data;
+            this.DataContext = _data;
+            
         }
 
         private void button_cancel_Click(object sender, RoutedEventArgs e)
         {
 
+                this.DialogResult = false;
+            // не понятно чем Hide отличается от Close
+                this.Hide();
         }
 
         private void button_ok_Click(object sender, RoutedEventArgs e)
         {
-
+           this.DialogResult= true;
+            this.Close();
         }
     }
 }

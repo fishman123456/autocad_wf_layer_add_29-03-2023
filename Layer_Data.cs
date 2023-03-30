@@ -50,7 +50,7 @@ namespace autocad_wf_layer_add_29_03_2023
                 catch (Exception ex)
                 {
                     return false;
-                    Application.ShowAlertDialog(ex.Message);
+                     Application.ShowAlertDialog(ex.Message);
                     // удаляем название
                     
                 }
