@@ -42,7 +42,7 @@ namespace autocad_wf_layer_add_29_03_2023
             //{
             //    MessageBox.Show(ex.Message);
             //}
-
+            // 23:21 спать буду UUUUUUUUUU
             // открываем транзакцию
             using (Transaction tr = db.TransactionManager.StartTransaction())
             // получаем таблицу слоёв
