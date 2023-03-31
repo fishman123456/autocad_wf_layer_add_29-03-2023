@@ -3,6 +3,7 @@ C:\Users\Fishman_1\Documents\GitHub\autocad_wf_layer_add_29-03-2023\obj\Debug\Wi
 C:\Users\Fishman_1\Documents\GitHub\autocad_wf_layer_add_29-03-2023\obj\Debug\autocad_wf_layer_add_29-03-2023_MarkupCompile.cache
 C:\Users\Fishman_1\Documents\GitHub\autocad_wf_layer_add_29-03-2023\obj\Debug\autocad_wf_layer_add_29-03-2023_MarkupCompile.lref
 C:\Users\Fishman.DB.CORP\Documents\GitHub\autocad_wf_layer_add_29-03-2023\bin\Debug\autocad_wf_layer_add_29-03-2023.dll
+C:\Users\Fishman.DB.CORP\Documents\GitHub\autocad_wf_layer_add_29-03-2023\bin\Debug\autocad_wf_layer_add_29-03-2023.pdb
 C:\Users\Fishman.DB.CORP\Documents\GitHub\autocad_wf_layer_add_29-03-2023\bin\Debug\accoremgd.dll
 C:\Users\Fishman.DB.CORP\Documents\GitHub\autocad_wf_layer_add_29-03-2023\bin\Debug\acdbmgd.dll
 C:\Users\Fishman.DB.CORP\Documents\GitHub\autocad_wf_layer_add_29-03-2023\bin\Debug\acmgd.dll
@@ -25,11 +26,9 @@ C:\Users\Fishman.DB.CORP\Documents\GitHub\autocad_wf_layer_add_29-03-2023\bin\De
 C:\Users\Fishman.DB.CORP\Documents\GitHub\autocad_wf_layer_add_29-03-2023\bin\Debug\ru-RU\AcWindows.resources.dll
 C:\Users\Fishman.DB.CORP\Documents\GitHub\autocad_wf_layer_add_29-03-2023\obj\Debug\autocad_wf_layer_add_29-03-2023.csproj.AssemblyReference.cache
 C:\Users\Fishman.DB.CORP\Documents\GitHub\autocad_wf_layer_add_29-03-2023\obj\Debug\UserControl1.g.cs
-C:\Users\Fishman.DB.CORP\Documents\GitHub\autocad_wf_layer_add_29-03-2023\obj\Debug\Win_Form.g.cs
 C:\Users\Fishman.DB.CORP\Documents\GitHub\autocad_wf_layer_add_29-03-2023\obj\Debug\autocad_wf_layer_add_29-03-2023_MarkupCompile.cache
 C:\Users\Fishman.DB.CORP\Documents\GitHub\autocad_wf_layer_add_29-03-2023\obj\Debug\autocad_wf_layer_add_29-03-2023_MarkupCompile.lref
 C:\Users\Fishman.DB.CORP\Documents\GitHub\autocad_wf_layer_add_29-03-2023\obj\Debug\UserControl1.baml
-C:\Users\Fishman.DB.CORP\Documents\GitHub\autocad_wf_layer_add_29-03-2023\obj\Debug\Win_Form.baml
 C:\Users\Fishman.DB.CORP\Documents\GitHub\autocad_wf_layer_add_29-03-2023\obj\Debug\autocad_wf_layer_add_29-03-2023.g.resources
 C:\Users\Fishman.DB.CORP\Documents\GitHub\autocad_wf_layer_add_29-03-2023\obj\Debug\autocad_wf_layer_add_29-03-2023.csproj.CoreCompileInputs.cache
 C:\Users\Fishman.DB.CORP\Documents\GitHub\autocad_wf_layer_add_29-03-2023\obj\Debug\autocad_wf_layer_add_29-03-2023.csproj.CopyComplete
