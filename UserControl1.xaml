@@ -5,8 +5,8 @@
              xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
              xmlns:local="clr-namespace:autocad_wf_layer_add_29_03_2023"
              mc:Ignorable="d" 
-             SizeToContent="WidthAndHeight" MinHeight="220" MinWidth="210" ResizeMode="CanMinimize">
-    <StackPanel>
+             SizeToContent="WidthAndHeight" MinHeight="200" MinWidth="300">
+    <StackPanel x:Name="stackpanel_1">
         <TextBlock x:Name="textblock_lay" TextWrapping="Wrap" Text="Название слоя" FontSize="20" Margin="5,5,5,5"/>
         <TextBox x:Name="textbox_leyer"  Margin="5,5,5,5"  FontSize="20"  MinWidth="150" Text="{Binding Name}"/>
         <CheckBox x:Name="checkbox_on_off" Content="Включен"  FontSize="20" Margin="5,5,5,5" IsChecked="{Binding IsOn}"/>

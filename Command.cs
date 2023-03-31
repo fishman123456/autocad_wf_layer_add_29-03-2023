@@ -1,22 +1,17 @@
-﻿using AcadApp = Autodesk.AutoCAD.ApplicationServices;
+﻿using Autodesk.AutoCAD.ApplicationServices;
 using Autodesk.AutoCAD.DatabaseServices;
 using Autodesk.AutoCAD.EditorInput;
 using Autodesk.AutoCAD.Runtime;
 
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using System.Windows.Documents;
 using System.Windows;
-using System.Windows.Markup;
+
+using AcadApp = Autodesk.AutoCAD.ApplicationServices;
 
 namespace autocad_wf_layer_add_29_03_2023
 {
     public class Command
     {
-        [CommandMethod ("Create_Layer_WPF")]
+        [CommandMethod("Create_Layer_WPF")]
         public void CreateLayerRun()
         {
             AcadApp.Document adoc = AcadApp.Application.DocumentManager.MdiActiveDocument;
@@ -31,14 +26,16 @@ namespace autocad_wf_layer_add_29_03_2023
 
             //Win_Form windows = new Win_Form(layerData);
             UserControl1 wpf_1 = new UserControl1(layerData);
-            wpf_1.Show();
+
+            AcadApp.Application.ShowModalWindow(wpf_1);
+            
             // открываем транзакцию
-            using (Transaction tr = db.TransactionManager.StartTransaction()) 
+            using (Transaction tr = db.TransactionManager.StartTransaction())
             // получаем таблицу слоёв
             {
                 LayerTable lt = (LayerTable)tr.GetObject(db.LayerTableId, OpenMode.ForRead);
                 // если название не удалено и такого еще нет в таблице слоев
-                if (lt.Has(layerData.Name))
+                if (!lt.Has(layerData.Name))
                 {
                     LayerTableRecord ltr = new LayerTableRecord();
                     ltr.Name = layerData.Name;
@@ -50,7 +47,7 @@ namespace autocad_wf_layer_add_29_03_2023
                 }
                 else
                 {
-                   // AcadApp.Application.ShowAlertDialog("Такой слой уже есть!");
+                     AcadApp.Application.ShowAlertDialog("Такой слой уже есть!");
                 }
                 tr.Commit();
             }
