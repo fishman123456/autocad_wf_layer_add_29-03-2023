@@ -18,7 +18,7 @@ namespace autocad_wf_layer_add_29_03_2023
     /// <summary>
     /// Логика взаимодействия для Win_Form.xaml
     /// </summary>
-    public partial class Win_Form : UserControl
+    public partial class Win_Form : Window
     {
         Layer_Data _data;
         public Win_Form(Layer_Data data)
